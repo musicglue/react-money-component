@@ -1,5 +1,9 @@
 # react-money-component
+
+[![Build Status](https://travis-ci.org/musicglue/react-money-component.svg?branch=master)](https://travis-ci.org/musicglue/react-money-component)
+
 Money handling component for React.js
+
 
 ##### Installation:
 
