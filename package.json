@@ -1,6 +1,6 @@
 {
   "name": "money-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React.js Money Component",
   "main": "lib/money.js",
   "scripts": {
@@ -10,9 +10,18 @@
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": ["es6", "js"],
-    "moduleFileExtensions": ["js", "json", "es6"],
-    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
   },
   "author": "Music Glue Team",
   "license": "MIT",
