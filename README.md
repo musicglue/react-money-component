@@ -8,14 +8,14 @@ Money handling component for React.js
 ##### Installation:
 
 ```
-npm install --save money-component
+npm install --save react-money-component
 ```
 
 ##### Usage:
 
 ```
 import React from 'react';
-import Money from 'money-component';
+import Money from 'react-money-component';
 
 export default class MyProduct extends React.Component {
   render() {
