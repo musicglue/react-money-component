@@ -43,8 +43,10 @@
   ],
   "dependencies": {
     "accounting": "^0.4.1",
-    "js-money": "^0.4.0",
-    "react": "^0.14.0"
+    "js-money": "^0.4.0"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0"
   },
   "devDependencies": {
     "babel": "^5.8.23",
