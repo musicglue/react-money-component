@@ -1,5 +1,5 @@
 import React from 'react';
-import Currency from 'js-money/lib/currency';
+import Currency from '@musicglue/js-money/lib/currency';
 import accounting from 'accounting';
 
 export default class Money extends React.Component {
