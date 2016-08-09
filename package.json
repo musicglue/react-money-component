@@ -1,13 +1,13 @@
 {
   "name": "react-money-component",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "React.js Money Component",
   "main": "lib/money.js",
   "scripts": {
     "test": "jest",
     "lib": "./node_modules/.bin/gulp",
     "build": "npm run lib",
-    "prepublish": "npm run test && npm run build" 
+    "prepublish": "npm run test && npm run build"
   },
   "jest": {
     "collectCoverage": true,
