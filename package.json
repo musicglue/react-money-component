@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lib": "./node_modules/.bin/gulp",
-    "build": "npm run lib"
+    "build": "npm run lib",
+    "prepublish": "npm run test && npm run build" 
   },
   "jest": {
     "collectCoverage": true,
