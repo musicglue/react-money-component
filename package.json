@@ -28,7 +28,7 @@
       "react"
     ]
   },
-  "author": "Music Glue Team",
+  "author": "Music Glue",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -40,14 +40,14 @@
   "homepage": "https://github.com/musicglue/react-money-component",
   "keywords": [
     "money",
-    "react"
+    "react",
+    "js-money"
   ],
   "peerDependencies": {
-    "accounting": "^0.4.1",
-    "js-money": "^0.5.1",
     "react": "^15.0.0"
   },
   "devDependencies": {
+    "@musicglue/js-money": "^0.6.0",
     "accounting": "^0.4.1",
     "babel": "^6.5.2",
     "babel-core": "^6.13.2",
@@ -66,9 +66,12 @@
     "istanbul": "^0.4.0",
     "istanbul-coveralls": "^1.0.3",
     "jest-cli": "^14.1.0",
-    "js-money": "^0.5.1",
     "react": "^15.3.0",
     "react-addons-test-utils": "^15.3.0",
     "react-dom": "^15.3.0"
+  },
+  "dependencies": {
+    "@musicglue/js-money": "^0.6.0",
+    "accounting": "^0.4.1"
   }
 }
