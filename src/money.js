@@ -1,21 +1,18 @@
 import React from 'react';
-import Currency from '@musicglue/js-money/lib/currency';
+import Currency from 'js-money/lib/currency';
 import accounting from 'accounting';
 
-export default class Money extends React.Component {
-  formattedAmount() {
-    const { cents, currency } = this.props;
-    const { symbol, decimal_digits: precision } = Currency[currency];
-    const amount = cents / Math.pow(10, precision);
+function formattedAmount(cents, currency) {
+  const { symbol, decimal_digits: precision } = Currency[currency];
+  const amount = cents / Math.pow(10, precision);
 
-    return accounting.formatMoney(amount, { symbol, precision });
-  }
+  return accounting.formatMoney(amount, { symbol, precision });
+}
 
-  render() {
-    return (
-      <span>{this.formattedAmount()}</span>
-    );
-  }
+export default function Money({ cents, currency }) {
+  return (
+    <span>{formattedAmount(cents, currency)}</span>
+  );
 }
 
 Money.propTypes = {

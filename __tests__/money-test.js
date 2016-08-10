@@ -1,7 +1,11 @@
-jest.dontMock('../src/money.js');
-jest.dontMock('accounting');
+import TestUtils from 'react-addons-test-utils';
+import React from 'react';
+import Money from '../src/money.js';
 
-var currencyPairs = {
+jest.unmock('../src/money.js');
+jest.unmock('accounting');
+
+const currencyPairs = {
   GBP: '£1.00',
   USD: '$1.00',
   AUD: 'AU$1.00',
@@ -10,24 +14,16 @@ var currencyPairs = {
   JPY: '¥100',
 };
 
-describe('Money', function() {
-  var TestUtils = require('react-addons-test-utils');
-  var findDOMNode = require('react-dom').findDOMNode;
-  var React = require('react');
-  var Money;
+const shallowRenderer = TestUtils.createRenderer();
 
-  beforeEach(function() {
-    Money = require('../src/money.js');
-  });
-
-  Object.keys(currencyPairs).forEach(function(key) {
-    var expectedValue = currencyPairs[key];
-    it('Shows the expected ' + key + ' value', function() {
-      var rendered = TestUtils.renderIntoDocument(
-        <Money cents={100} currency={key} />
-      );
-      var span = TestUtils.findRenderedDOMComponentWithTag(rendered, 'span');
-      expect(findDOMNode(span).textContent).toEqual(expectedValue);
+describe('Money', () => {
+  Object.keys(currencyPairs).forEach(key => {
+    const expectedValue = currencyPairs[key];
+    it(`Shows the expected ${key} value`, () => {
+      shallowRenderer.render(<Money cents={100} currency={key} />);
+      const output = shallowRenderer.getRenderOutput();
+      expect(output.type).toBe('span');
+      expect(output.props.children).toEqual(expectedValue);
     });
   });
 });
