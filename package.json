@@ -1,6 +1,6 @@
 {
   "name": "react-money-component",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "React.js Money Component",
   "main": "lib/money.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "react": "^15.0.0"
   },
   "devDependencies": {
-    "@musicglue/js-money": "^0.6.0",
+    "js-money": "^0.6.0",
     "accounting": "^0.4.1",
     "babel": "^6.5.2",
     "babel-core": "^6.13.2",
@@ -71,7 +71,7 @@
     "react-dom": "^15.3.0"
   },
   "dependencies": {
-    "@musicglue/js-money": "^0.6.0",
+    "js-money": "^0.6.0",
     "accounting": "^0.4.1"
   }
 }
