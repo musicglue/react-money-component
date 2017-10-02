@@ -14,8 +14,3 @@ export default function Money({ cents, currency }) {
     <span>{formattedAmount(cents, currency)}</span>
   );
 }
-
-Money.propTypes = {
-  cents: React.PropTypes.number.isRequired,
-  currency: React.PropTypes.string.isRequired,
-};
