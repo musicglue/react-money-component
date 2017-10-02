@@ -1,6 +1,6 @@
 {
   "name": "react-money-component",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "description": "React.js Money Component",
   "main": "lib/money.js",
   "scripts": {
