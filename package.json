@@ -44,7 +44,7 @@
     "js-money"
   ],
   "peerDependencies": {
-    "react": "^15.0.0"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "js-money": "^0.6.0",
@@ -66,9 +66,9 @@
     "istanbul": "^0.4.0",
     "istanbul-coveralls": "^1.0.3",
     "jest-cli": "^14.1.0",
-    "react": "^15.3.0",
+    "react": "^16.0.0",
     "react-addons-test-utils": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react-dom": "^16.0.0"
   },
   "dependencies": {
     "js-money": "^0.6.0",
